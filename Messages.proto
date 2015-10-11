@@ -21,7 +21,7 @@ message Sensor {
 	required string name = 3;
 }
 
-message DeviceInfo {
+message DeviceProfile {
 	required string model = 1;
 	repeated Sensor sensors = 2;
 }
@@ -54,7 +54,7 @@ message DeviceControlResponse {
 		OK = 0;
 		ERROR = 1;
 	}
-	required int32 requestId = 1; 
+	required int32 requestId = 1;
 	required Status status = 2;
 	optional DeviceConfiguration config = 3;
 }
